@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=Poppins:ital@1&display=swap');
+*{
+   margin: 0;
+   font-family:'Poppins', sans-serif ;
+   font-weight:500;
+   padding: 0;
+}
+section {
+   position: relative;
+   width: 100vw;
+   min-height: 100vh;
+   display:block;
+   align-items: center;
+   background-color: rgb(188, 15, 15);
+   justify-content: space-between;
+}
+
+header {
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position:absolute;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    border: 3px solid red;
+    justify-content: space-between;
+    flex-wrap:nowrap;
+    flex-direction: row;
+ }
