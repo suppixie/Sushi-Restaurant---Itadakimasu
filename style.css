@@ -201,3 +201,16 @@ header ul li a {
    height: 550px;
  }
 
+
+footer {
+   padding-right: 200px;
+   padding-top: 30px;
+   display: flex;
+   position: relative;
+   max-width: 100%;
+   background-color: rgb(188, 15, 15);
+   color: white;
+   min-height: 160px;
+   justify-content: space-between;
+}
+
