@@ -170,3 +170,34 @@ header ul li a {
    text-align: center;
    font-weight: 600;
  }
+ .container {
+   height: 100vh;
+   width: 100%;
+   max-width: 100%;
+   background-color: black;
+   padding-top: 40px;
+   padding-left: 100px;
+   display: block;
+   position: relative;
+ }
+.container h1 {
+   max-width: 30%;
+   max-height: 30%;
+   z-index: 1;
+   color: beige;
+   position: absolute;
+   font-style: italic;
+}
+ .slideshow {
+   display: none;
+ }
+ .carousel {
+   z-index: -1;
+   padding-top: 20px;
+   padding-left: 500px;
+}
+.carousel img{
+   width: 750px;
+   height: 550px;
+ }
+
