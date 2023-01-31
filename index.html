@@ -26,5 +26,21 @@
             <h4>The Best Combination!</h4>
             <div id="box">
             <button class="order" onclick="openForm()">Order Now</button>
+         <form action="" id="form" class="form-container">
+            <h2>ORDER</h2>
+            <label>Name</label><input type="text" placeholder="Enter your name"><br/>
+            <label>Phone number</label><input type="text" placeholder="Enter Phone Number"><br/>
+            <label>E-mail</label><input type="text" placeholder="Enter E-mail ID"><br/>
+            <label>Menu Items</label>
+                <h4>Tenmasu - Rs 200/-</h4><input type="checkbox" name="tenmasu" value="200"><br/>
+                <h4>Tuna Handroll - Rs 250/-</h4><input type="checkbox" name="Tuna Handroll" value="250"><br/>
+                <h4>Nigiri - Rs 200/-</h4><input type="checkbox" name="Nigiri" value="200"><br/>
+                <h4>Inari - Rs 150/-</h4><input type="checkbox" name="Inari" value="150"><br/>
+                <h4>Mini Kimbap- Rs 200/-</h4><input type="checkbox" name="Mini Kimbap" value="200"><br/>
+                <h4>Spicy Kimchi - Rs 250/-</h4><input type="checkbox" name="Spicy Kimchi" value="250"><br/>
+                <h3>Total: </h3><output type="text"></output>
+                <button type="submit" value="submit"></button>
+                <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+        </form></div>
 </body>
 </html>
