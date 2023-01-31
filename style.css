@@ -108,3 +108,65 @@ header ul li a {
    padding: 10px;
    background-color: white;
  }
+
+.specials {
+   padding: 100px;
+   display: flex;
+   align-items: center;
+   position: relative;
+   width: 100%;
+   max-width:100%;
+   background-color:beige;
+   justify-content: space-between;
+   text-align: center;
+ }
+ .textbox2 {
+   padding-bottom: 80px;
+ }
+
+ .textbox2 button {
+   font-size:medium;
+   color:whitesmoke;
+   background-color:black;
+   border-style:none;
+   padding: 10px 40px;
+   display: inline-block;
+   border-radius: 30px;
+   letter-spacing: 1px;
+   margin-top: 40px;
+ }
+ .items {
+   width: 53%;
+   align-items: center;
+ }
+
+ .items img {
+   border-radius: 20px;
+   width: 230px;
+   height: 230px;
+   position: relative;
+   display: inline-block;
+   vertical-align: middle;
+ }
+ 
+ .first2 {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-right: 18%;
+ }
+ 
+ .second2 {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-right: 18%;
+   padding-top: 4%;
+ }
+ .items p {
+   padding-top: 5px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 20px;
+   text-align: center;
+   font-weight: 600;
+ }
