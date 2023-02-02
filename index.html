@@ -28,21 +28,21 @@
             <h4>The Best Combination!</h4>
             <div id="box">
             <button class="order" onclick="openForm()">Order Now</button>
-         <form action="" id="form" class="form-container">
+         <form name="form" action="" id="form" class="form-container">
             <h2><b>ORDER</b></h2><br> 
             <div class="details">
-            <label>Name</label><input type="text" placeholder="Enter your name"><br/>
-            <label>Phone number</label><input type="text" placeholder="Enter Phone Number"><br/>
-            <label>E-mail</label><input type="text" placeholder="Enter E-mail ID"></div><br>
+            <input type="text" placeholder="Enter Name"><br/>
+            <input type="text" placeholder="Enter Phone Number"><br/>
+            <input type="text" placeholder="Enter E-mail ID"></div><br>
             <div class="menu"><label><b>Menu Items</b></label><br/>
-                <div><input type="checkbox" name="tenmasu" value="200"><h4>Tenmasu - Rs 200/-</h4></div>
-                <div><input type="checkbox" name="Tuna Handroll" value="250"><h4>Tuna Handroll - Rs 250/-</h4></div>
-                <div><input type="checkbox" name="Nigiri" value="200"><h4>Nigiri - Rs 200/-</h4></div>
-                <div><input type="checkbox" name="Inari" value="150"><br/><h4>Inari - Rs 150/-</h4></div>
-                <div><input type="checkbox" name="Mini Kimbap" value="200"><h4>Mini Kimbap- Rs 200/-</h4></div>
-                <div><input type="checkbox" name="Spicy Kimchi" value="250"><h4>Spicy Kimchi - Rs 250/-</h4></div><br/>
+                <div><input type="checkbox" name="ckb" id="tenmasu" onclick="checkItems(0)" value="200"><h4>Tenmasu - Rs 200/-</h4></div>
+                <div><input type="checkbox" name="ckb" id="Tuna Handroll" onclick="checkItems(1)" value="250"><h4>Tuna Handroll - Rs 250/-</h4></div>
+                <div><input type="checkbox" name="ckb" id="Nigiri" onclick="checkItems(2)" value="200"><h4>Nigiri - Rs 200/-</h4></div>
+                <div><input type="checkbox" name="ckb" id="Inari" onclick="checkItems(3)" value="150"><br/><h4>Inari - Rs 150/-</h4></div>
+                <div><input type="checkbox" name="ckb" id="Mini Kimbap" onclick="checkItems(4)" value="200"><h4>Mini Kimbap- Rs 200/-</h4></div>
+                <div><input type="checkbox" name="ckb" id="Spicy Kimchi" onclick="checkItems(5)" value="250"><h4>Spicy Kimchi - Rs 250/-</h4></div><br/>
             </div>
-                <h3>Total: </h3><output type="text"></output>
+                <input type="text" id="total" value="Total: Rs 0"/>
                 <button type="submit" value="submit"><b>Pay</b></button>
                 <button type="button" class="btn-cancel" onclick="closeForm()"><b>Close</b></button>
         </form></div>
@@ -53,7 +53,20 @@
            function closeForm() {
             document.getElementById("form").style.display="none";
            }
+
+           document.querySelector('#total').addEventListener('click', checkItems);
+           function checkItems(j){
+            var checkbox = document.querySelectorAll('input[name="ckb"]');
+            var total = 0;
+            for (i = 0; i < checkbox.length; i++) {
+                if (checkbox[i].checked) {
+                    total += parseFloat( checkbox[i].value);
+                }
+            }
+            document.getElementById("total").value = "Total: Rs " + total;
+}
         </script>
+
         </div>
         <div class="imgbox">
             <img src="./assets/sushi bg.png" height="600px">
@@ -63,7 +76,7 @@
         <div class="specials" data-scroll data-scroll-speed="-0.6">
         <div class="textbox2">
             <h1 style="font-family:'Long Cang', cursive; font-size: 150px;">Weekly<br/>Specials</h1>
-            <button class="Menu-button">View Menu</button>
+            <button class="Menu-button" onclick="openForm()">View Menu</button>
         </div>
         <div class="items">
             <div class="first2">
