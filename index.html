@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sushi restaurant</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <section>
@@ -27,20 +29,22 @@
             <div id="box">
             <button class="order" onclick="openForm()">Order Now</button>
          <form action="" id="form" class="form-container">
-            <h2>ORDER</h2>
+            <h2><b>ORDER</b></h2><br> 
+            <div class="details">
             <label>Name</label><input type="text" placeholder="Enter your name"><br/>
             <label>Phone number</label><input type="text" placeholder="Enter Phone Number"><br/>
-            <label>E-mail</label><input type="text" placeholder="Enter E-mail ID"><br/>
-            <label>Menu Items</label>
-                <h4>Tenmasu - Rs 200/-</h4><input type="checkbox" name="tenmasu" value="200"><br/>
-                <h4>Tuna Handroll - Rs 250/-</h4><input type="checkbox" name="Tuna Handroll" value="250"><br/>
-                <h4>Nigiri - Rs 200/-</h4><input type="checkbox" name="Nigiri" value="200"><br/>
-                <h4>Inari - Rs 150/-</h4><input type="checkbox" name="Inari" value="150"><br/>
-                <h4>Mini Kimbap- Rs 200/-</h4><input type="checkbox" name="Mini Kimbap" value="200"><br/>
-                <h4>Spicy Kimchi - Rs 250/-</h4><input type="checkbox" name="Spicy Kimchi" value="250"><br/>
+            <label>E-mail</label><input type="text" placeholder="Enter E-mail ID"></div><br>
+            <div class="menu"><label><b>Menu Items</b></label><br/>
+                <div><input type="checkbox" name="tenmasu" value="200"><h4>Tenmasu - Rs 200/-</h4></div>
+                <div><input type="checkbox" name="Tuna Handroll" value="250"><h4>Tuna Handroll - Rs 250/-</h4></div>
+                <div><input type="checkbox" name="Nigiri" value="200"><h4>Nigiri - Rs 200/-</h4></div>
+                <div><input type="checkbox" name="Inari" value="150"><br/><h4>Inari - Rs 150/-</h4></div>
+                <div><input type="checkbox" name="Mini Kimbap" value="200"><h4>Mini Kimbap- Rs 200/-</h4></div>
+                <div><input type="checkbox" name="Spicy Kimchi" value="250"><h4>Spicy Kimchi - Rs 250/-</h4></div><br/>
+            </div>
                 <h3>Total: </h3><output type="text"></output>
-                <button type="submit" value="submit"></button>
-                <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+                <button type="submit" value="submit"><b>Pay</b></button>
+                <button type="button" class="btn-cancel" onclick="closeForm()"><b>Close</b></button>
         </form></div>
         <script>
            function openForm() {
@@ -118,17 +122,48 @@
         }
         </script>
     </section>
+    <section><div class="reviewsection">
+        <h1 style="font-family:'Long Cang', cursive; font-weight:bold ; font-size: 80px; color:black; ">Reviews</h1>
+        <div class="reviews">
+            <div class="rev1">
+                <div class="customer">
+                <a href="#" >M</a>
+                <h4>Mamtha Patalay</h4></div>
+                <hr><br/>
+                <h2 style="font-style: italic;">" Loved the variety of Sushi and great Ambience "</h2>
+            </div>
+            <div class="rev2">
+                <div class="customer">
+                <a href="#" >S</a>
+                <h4>Sri kumar</h4></div>
+                <hr><br/>
+                <h2 style="font-style: italic;">" Definitely worth it, best Sushi placeeeeeeeee "</h2>
+            </div>
+            <div class="rev3">
+                <div class="customer">
+                <a href="#" >A</a>
+                <h4>Adarsh Pandey</h4></div>
+                <hr><br/>
+                <h2 style="font-style: italic;">" Good food , great ambience and service, really loved this place "</h2>
+            </div>
+        </div>
+        </div>
+    </section>
     <footer>
         <div class="brand"></div>
+        <div>
             <h2 style="font-family:'Long Cang', cursive; font-weight:bold ; font-size: 50px; ">Itadakimasu</h2>
+            <h4 style="font-style: italic;">Authentic Japanese Sushi</h4></div>
         </div>
             <div class="socials">
-            <h2>Follow Our Socials</h2>
-            <img src="./assets/pngfind.com-instagram-symbol-png-381501.png" height="30px">
+            <h1 style="font-size: 25px;">Follow Our Socials</h1>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
         </div>
         
         <div class="address">
-            <h1>Address</h1>
+            <h1 style="font-size: 25px;">Address</h1>
             <h5>528 17 Ave SW, Calgary, AB, Canada, T2S 0B1</h5>
         </div>
     </footer>  
